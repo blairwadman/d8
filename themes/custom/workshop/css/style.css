@@ -1,0 +1,12 @@
+.left {
+    position: absolute;
+    left: 0;
+    top: 92px;
+    width: 178px;
+}
+
+.content {
+    position: absolute;
+    left: 178px;
+    top: 92px;
+}
