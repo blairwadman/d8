@@ -4,6 +4,9 @@
     </section>
     {% if page.left %}
         <aside class="left">
+            {% if sidebar_mpu %}
+                {{ sidebar_mpu }}
+            {%  endif %}
             {{ page.left }}
         </aside>
     {% endif %}
