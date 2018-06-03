@@ -1,0 +1,10 @@
+<div id="page">
+    <section class="content">
+        {{ page.content }}
+    </section>
+    {% if page.left %}
+        <aside class="left">
+            {{ page.left }}
+        </aside>
+    {% endif %}
+</div>
