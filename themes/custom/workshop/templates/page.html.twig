@@ -3,11 +3,13 @@
         {{ page.content }}
     </section>
     {% if page.left %}
-        <aside class="left">
-            {% if sidebar_mpu %}
-                {{ sidebar_mpu }}
-            {%  endif %}
-            {{ page.left }}
-        </aside>
+        {% block left %}
+            <aside class="left">
+                {% if sidebar_mpu %}
+                    {{ sidebar_mpu }}
+                {%  endif %}
+                {{ page.left }}
+            </aside>
+        {% endblock %}
     {% endif %}
 </div>
