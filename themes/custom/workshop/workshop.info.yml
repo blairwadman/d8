@@ -5,11 +5,10 @@ package: Other
 core: 8.x
 libraries:
   - workshop/global-styling
-libraries-override:
-  classy/base:
-    css:
-     component:
-      css/components/tabs.css: false
+stylesheets-remove:
+  - '@classy/css/components/tabs.css'
+  - '@classy/css/components/button.css'
+
  
 base theme: classy
 #Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
