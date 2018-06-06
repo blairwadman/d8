@@ -1,0 +1,10 @@
+parameters:
+  welcome.messages:
+    - 'Hello and welcome'
+    - 'Welcome!'
+    - 'Hello world'
+services:
+  message.generator:
+    class: Drupal\welcome\Messages\MessageGenerator
+    arguments:
+      - '%welcome.messages%'
