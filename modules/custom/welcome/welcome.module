@@ -22,3 +22,13 @@ function welcome_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_user_login().
+ *
+ * @param $account
+ */
+function welcome_user_login($account) {
+  $config = \Drupal::config('welcome.adminsettings');
+  \Drupal::messenger()->addMessage(t('Hi @name ' . $config->get('welcome_message', array('@name' => $account->name))));
+}
