@@ -8,3 +8,13 @@ class-adder:
     js/workshop.js: {}
   dependencies:
     - core/jquery
+sweetalert:
+  remote: https://sweetalert.js.org/guides
+  version: 2.1.0
+  license:
+    name: MIT
+    url: https://github.com/t4t5/sweetalert/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    https://unpkg.com/sweetalert/dist/sweetalert.min.js: { type: external, minified: true }
+    js/sweet.js: {}
